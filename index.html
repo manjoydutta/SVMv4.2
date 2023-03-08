@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Smart Voting Platform</title>
+        <link rel="stylesheet" href="support/style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+    </head>
+    <body>
+        <header>
+            <h2 class="logo"><img src="https://ecisveep.nic.in/uploads/monthly_2018_04/large.eci-logo.png.3923b99226a762b9e37469d762c31a77.png" class="eci" alt="logo">Smart Voting Platform</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Admin</a>
+            </nav>
+            <div class="main">
+                <button class="btnLogin-popup">Login</button>
+                <ion-icon class="menu-icon" name="menu"></ion-icon>
+                <ion-icon class="menu-close" name="close"></ion-icon>
+            </div>
+        </header>
+
+        <div class="left-panel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="object-fit: scale-down;" data-bs-interval="3000" >
+                    <img src="https://kuorum.org/wp-content/uploads/2020/05/voto-electronico-validez-legal-940x488.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 1000px;">
+                  </div>
+                  <div class="carousel-item"  style="object-fit: scale-down;"data-bs-interval="3000">
+                    <img src="https://insidetelecom.com/wp-content/uploads/2022/05/vote-online-cover.jpg" class="d-block w-100" alt="..." class="d-block w-100" style="height: 300px; width: 1000px;">
+                  </div>
+                  <div class="carousel-item"  style="object-fit: scale-down;" data-bs-interval="3000" >
+                    <img src="https://static.scientificamerican.com/sciam/cache/file/CF393A78-1DF6-4D70-BF862AC7CA0ACC02_source.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 1000px;">
+                  </div>
+                  <div class="carousel-item" style="object-fit: scale-down;" data-bs-interval="3000" >
+                    <img src="https://www.livelaw.in/h-upload/2021/08/10/1500x900_398309-election-commission-of-india-eci-and-sc.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 1000px;">
+                  </div>
+                  <div class="carousel-item" style="object-fit: scale-down;" data-bs-interval="3000" >
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/photogallery/201404/pic7_041714023150.jpg?VersionId=1IKxafvCcKlzYUDMSIUN3gmeSVibkaPz" class="d-block w-100" alt="..." style="height: 300px; width: 1000px;">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <svg class="bi bi-person-circle" viewBox="0 0 16 16"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                </svg>
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="user-id" class="text-field" oninput="this.value = this.value.toUpperCase()" minlength="6" maxlength="6" name="user-id" required/>
+                    <label for="email">Voter ID*</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="login-password" class="text-field" name="login-password" minlength="8" required/>
+                    <label for="password">Password*</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for="">
+                        <input type="checkbox" id="check-box">Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button class="btn-style" id="login-btn">Login</button>
+                <div class="login-register">
+                    <p>Not yet registered?
+                        <a href="#"  class="register-link">Register</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="voter-id" name="voter-id" class="text-field" required pattern="[0-9A-Z]{6}" oninput="this.value = this.value.toUpperCase()" minlength="6" maxlength="6" name="user-id" required/>
+                    <label for="voter-id">Voter ID*<span class="error" id="voter-id-error"></span></label>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="aadhaar-id"  name="aadhaar-id" class="text-field" required pattern="[0-9]{12}"  maxlength="12" />
+                    <label for="aadhaar-id">Aadhaar ID*<span class="error" id="aadhaar-number-error"></span></label>
+                    </span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" class="text-field" id="email-id" name="email-id" required/>
+                    <label for="email-id">Email ID*<span class="error" id="email-error"></span></label>
+                    </span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="register-password" name="register-password" class="text-field" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number, one uppercase and lowercase letter, and at least 8 or more characters"/><br>
+                    <label for="register-password">Password*<span class="error" id="password-error"></span></label>
+                    </span>
+                </div>
+                <div class="remember-forgot">
+                    <label for="">
+                        <input type="checkbox" name="" id="">I agree to the terms & conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn-style" id="register-btn">Register</button>
+                <div class="login-register">
+                    <p>Already registered?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="scroll" direction="up">
+                <p>Latest Released Updates</p>
+                <p><a href="https://manjoydutta.github.io/SVMv4.2">v4.2</a>: Responsive Navigation bar</p>
+                <p><a href="https://manjoydutta.github.io/SVMv4.1">v4.1</a>: Redefined UX</p>
+                <p>v4.0: Redesigned UI</p>
+                <p>v3.2: New Portal launched</p>
+                <p><a href="https://manjoydutta.github.io/SVMv3.1">v3.1</a>: Admin Analytics building started</p>
+                <p><a href="https://manjoydutta.github.io/SVMv3.0">v3.0</a>: Admin Portal Design</p>
+                <p>v2.5: Firebase Link-up</p>
+                <p><a href="https://manjoydutta.github.io/SVMv2.2">v2.2</a>: Voter Homepage</p>
+                <p><a href="https://manjoydutta.github.io/SVMv2.1">v2.1</a>: Administration Portal</p>
+                <p>v2.0: First look of the Login and Register page</p>
+                <p>v1.0: Intial planning and first view of the project</p>
+            </marquee>
+        </div>
+        <script type="module" src="support/script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
