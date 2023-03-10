@@ -21,6 +21,7 @@ btnPopup.addEventListener('click', ()=>{
 });
 iconClose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-popup');
+    wrapper.classList.remove('active');
     lp.classList.remove('active-popup');
     rp.classList.remove('active-popup');
 });
